@@ -3,6 +3,8 @@ import "./App.css";
 import landing_temp_cover from "./assets/landing_temp_cover.jpeg";
 import title from "./assets/eerie_tides_logo.png";
 import TeamMembers from "./components/TeamMembers";
+import ResultsTable from "./components/ResultsTable";
+
 function App() {
   return (
     <>
@@ -50,8 +52,11 @@ function App() {
       </div>
       <div className="call-to-action my-32 flex flex-col items-center justify-center">
         <div className="text-5xl">SEE YOUR TIMES</div>
-        <button className=" text-4xl bg-white text-black px-8 py-2 rounded-sm">Leaderboard</button>
+        <button className=" text-4xl bg-white text-black px-8 py-2 rounded-sm">
+          Leaderboard
+        </button>
       </div>
+      <ResultsTable />
     </>
   );
 }
