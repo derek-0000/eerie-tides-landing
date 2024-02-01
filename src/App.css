@@ -1,14 +1,18 @@
+html{
+  background-image: url(./assets/bg-noise.png), linear-gradient(180deg, #000000 0%,  #031115 85% , #000000 90%);
 
-.play-now-button {
-  margin: 0;
-  transition: all .5s;
-  position: relative;
-  font-size: 8rem;
-  font-family: "MorganiteBold", sans-serif;
-  color: black;
-  opacity: 100%;
 }
-.play-now-button:hover {
+.play-now-button {
+  font-family: "MorganiteBold", sans-serif;
+  transition: all .2s ease-out;
+  margin: 0;
+  /* position: relative;
+  font-size: 8rem;
+  color: #1D1D1D;
+  opacity: 100%; */
+}
+
+/* .play-now-button:hover {
   transition: all .5s;
 }
 
@@ -19,12 +23,13 @@
   height: 100%;
   transition: all .3s;
   content: "PLAY NOW";
-  color: white;
+  color: black;
+  background-color: white;
   position: absolute;
   left:0;
   top:0;
   margin: 0;
-}
+} */
 
 .story-container, .teammember-card, .call-to-action{
   font-family: "MorganiteBold", sans-serif;
@@ -59,13 +64,13 @@
 .background-text-a{
   background: url(./assets/eerie_tides_team_members.png) repeat-x;
   width: 4074px;
-  height: 10px;
+  height: 8px;
   animation: slideRight 30s linear infinite;
 }
 .background-text-a2{
   background: url(./assets/eerie_tides_team_members.png) repeat-x;
   width: 4074px;
-  height: 10px;
+  height: 8px;
   animation: slideLeft 30s linear infinite;
 }
 .team-member-row{

@@ -16,6 +16,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 @font-face {
   font-family: "MorganiteBold";
   src: url("/fonts/Morganite-Bold.ttf") format("truetype");
