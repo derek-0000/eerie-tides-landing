@@ -3,8 +3,8 @@ import ResultsTable from "../components/ResultsTable";
 import { useEffect, useState } from "react";
 
 export default function LeaderboardPage() {
-  const [resultsData, setResultsData] = useState([]);
-  const [player, setPlayer] = useState(null);
+//   const [resultsData, setResultsData] = useState([]);
+//   const [player, setPlayer] = useState(null);
   const [buttonLoading, setButtonLoading] = useState(false);
 
   const handleSearch = async () => {
@@ -15,6 +15,7 @@ export default function LeaderboardPage() {
         resolve({ gtag: "Player 1", time: "1:00", deaths: 0 });
       }, 400);
     });
+    return response
   };
 
   useEffect(() => {
@@ -80,7 +81,7 @@ export default function LeaderboardPage() {
           </Link>
         </div>
       </div>
-      <ResultsTable player={player} results={resultsData.slice(0,14)} />
+      <ResultsTable />
     </div>
   );
 }

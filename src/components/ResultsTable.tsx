@@ -1,17 +1,16 @@
-import { useState, useEffect } from "react";
 
-type Result = {
-  gtag: string;
-  time: string;
-  deaths: number;
-};
+// type Result = {
+//   gtag: string;
+//   time: string;
+//   deaths: number;
+// };
 
-type Props = {
-  results: Result[] | null;
-  player: Result | null;
-};
+// type Props = {
+//   results: Result[] | null;
+//   player: Result | null;
+// };
 
-export default function ResultsTable({ results, player }: Props) {
+export default function ResultsTable() {
   const result = [
     {
       gtag: "Player 1",
@@ -56,7 +55,7 @@ export default function ResultsTable({ results, player }: Props) {
               </td>
             </tr>
           ))}
-          {player && (
+          {/* {player && (
             <tr>
               <td className="border text-yellow-300 border-gray-400 px-4 py-2">
                 4
@@ -71,7 +70,7 @@ export default function ResultsTable({ results, player }: Props) {
                 3
               </td>
             </tr>
-          )}
+          )} */}
         </tbody>
       </table>
     </div>
