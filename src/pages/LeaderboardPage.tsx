@@ -39,13 +39,13 @@ export default function LeaderboardPage() {
           <div className="flex ">
             <input
               type="text"
-              className="h-14 w-full px-4 text-6xl player-input bg-transparent border border-gray-400 rounded-r-none focus:outline-none"
+              className="h-14 w-full px-4 text-6xl player-input bg-transparent border border-gray-400 rounded-l-sm rounded-r-sm focus:outline-none"
               placeholder="GAMERTAG"
             />
             <button
               disabled={buttonLoading}
               onClick={handleSearch}
-              className="min-w-36 flex items-center justify-center call-to-action text-4xl bg-white text-black px-8 py-2 rounded-sm rounded-l-none"
+              className="player-search-button min-w-36 disabled:cursor-not-allowed flex items-center justify-center call-to-action text-4xl bg-white text-black px-8 py-2 rounded-sm rounded-l-none hover:bg-black hover:text-white"
             >
               {buttonLoading ? (
                 <svg
@@ -75,7 +75,7 @@ export default function LeaderboardPage() {
           </div>
           <Link
             to={"/"}
-            className="call-to-action text-4xl bg-white text-black px-8 py-2 rounded-sm"
+            className="call-to-action text-4xl bg-white text-black px-8 py-2 rounded-sm hover:bg-black hover:text-white"
           >
             HOME
           </Link>

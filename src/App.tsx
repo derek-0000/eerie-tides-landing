@@ -52,7 +52,7 @@ function App() {
         <div className="text-5xl">SEE YOUR TIMES</div>
         <Link
           to={"/leaderboard"}
-          className=" text-4xl bg-white text-black px-8 py-2 rounded-sm"
+          className="leaderboard-link text-4xl bg-white text-black px-8 py-2 rounded-sm hover:bg-black hover:text-white"
         >
           Leaderboard
         </Link>

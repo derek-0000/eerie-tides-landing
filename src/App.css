@@ -2,7 +2,7 @@ html{
   background-image: url(./assets/bg-noise.png), linear-gradient(180deg, #000000 0%,  #03111590 85% , #000000 90%);
 
 }
-.play-now-button {
+.play-now-button, .leaderboard-link, .player-search-button, .call-to-action {
   font-family: "MorganiteBold", sans-serif;
   transition: all .2s ease-out;
   margin: 0;
