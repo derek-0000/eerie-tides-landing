@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import landing_temp_cover from "./assets/landing_temp_cover.jpeg";
 import title from "./assets/eerie_tides_logo.png";
 import TeamMembers from "./components/TeamMembers";
-import ResultsTable from "./components/ResultsTable";
 
 function App() {
   return (
@@ -58,7 +57,6 @@ function App() {
           Leaderboard
         </Link>
       </div>
-      <ResultsTable />
     </>
   );
 }

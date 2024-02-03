@@ -1,39 +1,18 @@
 html{
-  background-image: url(./assets/bg-noise.png), linear-gradient(180deg, #000000 0%,  #031115 85% , #000000 90%);
+  background-image: url(./assets/bg-noise.png), linear-gradient(180deg, #000000 0%,  #03111590 85% , #000000 90%);
 
 }
 .play-now-button {
   font-family: "MorganiteBold", sans-serif;
   transition: all .2s ease-out;
   margin: 0;
-  /* position: relative;
-  font-size: 8rem;
-  color: #1D1D1D;
-  opacity: 100%; */
 }
 
-/* .play-now-button:hover {
-  transition: all .5s;
-}
-
-.play-now-button:hover::after{
-  transform: translateY(-8px);
-}
-.play-now-button::after{
-  height: 100%;
-  transition: all .3s;
-  content: "PLAY NOW";
-  color: black;
-  background-color: white;
-  position: absolute;
-  left:0;
-  top:0;
-  margin: 0;
-} */
-
-.story-container, .teammember-card, .call-to-action{
+.story-container, .teammember-card, .call-to-action, .leaderboard-title, .table-header, .table-body, .player-input  {
   font-family: "MorganiteBold", sans-serif;
 }
+
+
 
 @keyframes slideRight{
   0% {
@@ -78,4 +57,8 @@ html{
   transform: translate3d(-1600px, 0, 0);
   width: 3800px;
   animation: teamMembersSlide 45s linear infinite;
+}
+
+.player-input{
+
 }

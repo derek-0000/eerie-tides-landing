@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
+import LeaderboardPage from './pages/LeaderboardPage.tsx';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path: "leaderboard",
-    element: <div>Leaderboard</div>,
+    element: <LeaderboardPage/>,
   },
 ]);
 
