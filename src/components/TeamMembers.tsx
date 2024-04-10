@@ -1,4 +1,3 @@
-import member_image from "../assets/member_image.png";
 const teamMembersTop = [
   {
     name: "Ivan Lua",
