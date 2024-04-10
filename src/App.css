@@ -1,64 +1,63 @@
-html{
-  background-image: url(./assets/bg-noise.png), linear-gradient(180deg, #000000 0%,  #03111590 85% , #000000 90%);
-
+html {
+  background-image: url(./assets/bg-noise.png),
+    linear-gradient(180deg, #000000 0%, #03111590 85%, #000000 90%);
 }
-.play-now-button, .leaderboard-link, .player-search-button, .call-to-action {
+.play-now-button,
+.leaderboard-link,
+.player-search-button,
+.call-to-action {
   font-family: "MorganiteBold", sans-serif;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   margin: 0;
 }
 
-.story-container, .teammember-card, .call-to-action, .leaderboard-title, .table-header, .table-body, .player-input  {
+.story-container,
+.teammember-card,
+.call-to-action,
+.leaderboard-title,
+.table-header,
+.table-body,
+.player-input {
   font-family: "MorganiteBold", sans-serif;
 }
 
-
-
-@keyframes slideRight{
+@keyframes slideRight {
   0% {
-      transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-      transform: translate3d(1358px, 0, 0);
+    transform: translate3d(1358px, 0, 0);
   }
 }
-@keyframes slideLeft{
+@keyframes slideLeft {
   0% {
-      transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-      transform: translate3d(-1358px, 0, 0);
+    transform: translate3d(-1358px, 0, 0);
   }
 }
-@keyframes teamMembersSlide{
+@keyframes teamMembersSlide {
   0% {
     transform: translate3d(-1600px, 0, 0);
-
   }
   100% {
-      transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
-.background-text-a{
+.background-text-a {
   background: url(./assets/eerie_tides_team_members.png) repeat-x;
-  width: 4074px;
+  width: 6074px;
   height: 8px;
   animation: slideRight 30s linear infinite;
 }
-.background-text-a2{
+.background-text-a2 {
   background: url(./assets/eerie_tides_team_members.png) repeat-x;
-  width: 4074px;
+  width: 6074px;
   height: 8px;
   animation: slideLeft 30s linear infinite;
 }
-.team-member-row{
-  
-  transform: translate3d(-1600px, 0, 0);
-  width: 3800px;
-  animation: teamMembersSlide 45s linear infinite;
-}
 
-.player-input{
-
+.player-input {
 }

@@ -1,5 +1,4 @@
 import "./App.css";
-import { Link } from "react-router-dom";
 import landing_temp_cover from "./assets/landing_temp_cover.jpeg";
 import title from "./assets/eerie_tides_logo.png";
 import TeamMembers from "./components/TeamMembers";
@@ -24,20 +23,15 @@ function App() {
         </div>
       </div>
       <div className="flex justify-center items-center flex-col lg:flex-row gap-12 lg:gap-52 p-2 sm:px-48 story-container text-center">
-        <div className="story-container text-center">
-          <div className=" text-5xl">STORY</div>
-          <div className=" text-2xl tracking-wide">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-            natus distinctio eligendi totam autem perspiciatis perferendis qui!
-            Odit nesciunt velit ipsa ut, nemo iusto maiores numquam quisquam,
-            illum earum odio.
+        <div className="flex flex-col justify-center items-center story-container text-center">
+          <div className=" text-7xl bolder">STORY</div>
+          <div className=" w-[50%] text-3xl tracking-wide">
+            Eerie tides is an under-water horror themed videogame. Where the
+            player gets imersed into an underwater accident, trying to uncover
+            the misteries that bring to reality that eerie feeling you get when
+            diving into deep waters.
           </div>
         </div>
-      <img
-        id="video-player"
-        className="z-50 h-56 w-[100%] object-cover"
-        src={landing_temp_cover}
-      />
       </div>
       <div className="flex justify-center items-center flex-col gap-1 overflow-x-hidden	">
         <div className="-mb-2 mt-32 overflow-x-hidden">
@@ -47,15 +41,6 @@ function App() {
         <div className="overflow-x-hidden">
           <div className=" h-8 background-text-a2"></div>
         </div>
-      </div>
-      <div className="text-white call-to-action my-32 flex flex-col items-center justify-center">
-        <div className="text-5xl">SEE YOUR TIMES</div>
-        <Link
-          to={"/leaderboard"}
-          className="leaderboard-link text-4xl bg-white text-black px-8 py-2 rounded-sm hover:bg-black hover:text-white"
-        >
-          Leaderboard
-        </Link>
       </div>
     </>
   );
